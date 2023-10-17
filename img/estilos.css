@@ -302,10 +302,40 @@ body {
     margin: 50px 0;
 }
 
+/* Seccion About */
+
+#about .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 0;
+  background: url(about.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+
+#about .container h1 {
+  color: white;
+  padding: 30px;
+}
+
+#about .container h1 span {
+  color: #620586;
+}
+
+#about .container p {
+  padding: 50px 20px;
+  color: white; /* Cambia el color del texto a blanco */
+  text-align: center;
+  text-shadow: 2px 2px 0 black; /* Agrega un sombreado negro al texto */
+}
+
 /* Footer */
 
 footer {
-    background-color: #202020;
+    background-color: #181717;
     color: white;
 }
 
@@ -373,7 +403,7 @@ footer {
 
 .inf-container ul {
     padding: 20px 0;
-    color: #747474;
+    color: #620586;
     cursor: pointer;
 }
 
