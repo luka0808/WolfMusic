@@ -24,7 +24,8 @@ img {
 
 body {
 	background: #050508;
-	color: #faf1f1;
+	color: #fff;
+  text-shadow: black;
 	font-family: 'Roboto', sans-serif;
 	height: 100vh;
 	
@@ -44,7 +45,7 @@ body {
 }
 
 .header-container .header-navbar ul li a{
-    color: white;
+    color: #620586;
     font-size: 1em;
     font-weight: bold;
     transition: all 0.5s ease;
