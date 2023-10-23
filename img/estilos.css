@@ -13,11 +13,10 @@ h1 {
 	padding: 20px;
 	vertical-align: middle;
 	font-size: 100px;
-
 }
 
 img {
-	width: 10%;
+	width: 20%;
 	display: block;
 	margin: 0  auto;
 }
@@ -420,7 +419,7 @@ form input {
     width: 40px;
     font-size: 1.2em;
     padding: 3px;
-    color: #747474;
+    color: #620586;
     cursor: pointer;
 }
 
