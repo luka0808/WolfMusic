@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+}
+
+h1 {
+	text-align: center;
+	padding: 20px;
+	vertical-align: middle;
+	font-size: 100px;
+}
+
+img {
+	width: 20%;
+	display: block;
+	margin: 0  auto;
+}
+
+body {
+	background: #050508;
+	color: #fff;
+  text-shadow: black;
+	font-family: 'Roboto', sans-serif;
+	height: 100vh;
+	
+}
+
+.header-container .header-navbar {
+    width: 100%;
+    height: auto;
+    padding: 15px 0;
+    background: #050508;
+}
+
+.header-container .header-navbar ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header-container .header-navbar ul li a{
+    color: #620586;
+    font-size: 1em;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 40px 0;
+
+	/* Flexbox */
+	/* display: flex;
+	gap: 20px; */
+
+	/* Grid */
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	gap: 20px;
+}
+
+.titulo {
+	font-size: 24px;
+	padding: 20px 0;
+}
+
+.contenedor-conciertos {
+	/* Flexbox */
+	/* width: 70%;
+
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px; */
+
+	/* Grid */
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+
+.card {
+	border-radius: 10px;
+	min-height: 200px;
+	font-weight: bold;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+	transition: all 0.3s ease;
+
+	/* Flexbox */
+	/* width: calc(33.33% - 20px); */
+}
+
+.card:hover {
+	transform: scale(1.03);
+}
+
+.card .textos {
+	height: 100%;
+	
+	/* Flebox */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	/* Grid */
+	/* display: grid;
+	grid-template-rows: 1fr auto; */
+}
+
+.banner {
+	border-radius: 10px;
+	text-align: center;
+	padding: 20px;
+	background-size: cover;
+	background-position: center center;
+
+	/* Flexbox */
+	/* width: 30%; */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	/* Grid */
+	/* display: grid;
+	grid-template-rows: auto auto auto;
+	align-items: center; */
+}
+
+.banner ul {
+	list-style: none;
+}
+
+.banner ul li {
+	margin: 15px;
+	font-weight: bold;
+}
+
+.banner ul li a {
+	color: #fff;
+	transition: all 0.4s ease;
+}
+
+.banner ul li a:hover {
+	color: #620586;
+}
+
+.banner .boton {
+	background: #620586;
+  color: #fff;
+	display: block;
+	width: 100%;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
+	padding: 10px;
+	border: none;
+	border-radius: 100px;
+	font-family: 'Roboto', sans-serif;
+	cursor: pointer;
+}
+
+/* Seccion - Contactos/Formulario */
+
+.container-form {
+    width: 95%;
+    max-width: 1600px;
+    background: #050508;
+    padding: 10px;
+    margin: 10px auto;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+}
+
+.container-form h1 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #620586;
+}
+
+.contenido {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.contenido .informacion,.contenido .formulario{
+    width: 50%;
+}
+
+/* Estilo Informacion */
+
+.contenido .informacion {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    color: #620586;
+    font-size: 1.2em;
+}
+
+.contenido .informacion ul li {
+    padding: 10px 0;
+}
+
+.contenido .informacion ul li a {
+    padding-left: 20px;
+    color: white;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.contenido .informacion .socialmedia-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0; 
+    font-size: 1.4em;
+    color: white;
+}
+
+/* Estilos Formulario */
+
+.formulario {
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.formulario input[type='text'], .formulario textarea {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    padding: 12px 20px;
+    border: 1px solid #999;
+    color: #999;
+    font-weight: 500;
+    outline: 0;
+}
+
+.formulario textarea {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 150px;
+    max-height: 200px;
+}
+
+.formulario input[type='text']:focus, .formulario textarea:focus {
+    border: 1px solid #620586;
+}
+
+.formulario button {
+    padding: 12px 30px;
+    border: transparent;
+    background: #620586;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.contenido .mapa iframe {
+    border-radius: 10px;
+}
+
+/* Modal / PopUp */
+
+#modal-login::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Para Centrar el contenido del modal */
+
+#modal-login {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 100vh;
+}
+
+.saludo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.saludo h1 {
+    margin: 50px 0;
+}
+
+/* Seccion About */
+
+#about .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 0;
+  background: url(about.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+
+#about .container h1 {
+  color: white;
+  padding: 30px;
+}
+
+#about .container h1 span {
+  color: #620586;
+}
+
+#about .container p {
+  padding: 50px 20px;
+  color: white; /* Cambia el color del texto a blanco */
+  text-align: center;
+  text-shadow: 2px 2px 0 black; /* Agrega un sombreado negro al texto */
+}
+
+/* Footer */
+
+footer {
+    background-color: #181717;
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+
+.items-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    gap: 10px;
+    width: 100%;
+    height: 250px;
+}
+
+.copyright-container {
+    width: 100%;
+    margin: 30px 0;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #323232;
+    color: #747474;
+}
+
+.copyright-container .tarjetas-container {
+    display: flex;
+    font-size: 25px;
+    gap: 20px;
+}
+
+.registro-container {
+    /* color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: auto;
+    /* Tratar de arreglar el overflow al minimizar la pantalla */
+    overflow: hidden;
+    /* align-items: center; */
+}
+
+.registro-container .registro-parrafos {
+    /*   */
+    color: #747474;
+    padding: 20px 0;
+}
+
+.mediasocial-container .media-icons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    color: #620586;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.inf-container ul {
+    padding: 20px 0;
+    color: #620586;
+    cursor: pointer;
+}
+
+.form-box form {
+    display: flex;
+}
+
+form input {
+    width: 75%;
+}
+
+.form-box form button {
+    width: 40px;
+    font-size: 1.2em;
+    padding: 3px;
+    color: #620586;
+    cursor: pointer;
+}
+
+/* Estilos generales para dispositivos móviles */
+
+@media screen and (max-width: 600px) {
+    body {
+      font-size: 16px; /* Ajusta el tamaño de fuente para una mejor legibilidad */
+    }
+  
+    h1 {
+      font-size: 36px; /* Ajusta el tamaño de fuente del encabezado principal */
+    }
+  
+    .contenedor {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .contenedor-conciertos {
+      grid-template-columns: 1fr; /* Cambia a una sola columna para los conciertos */
+    }
+  
+    .card {
+      width: 100%; /* Ocupa todo el ancho en dispositivos móviles */
+    }
+  
+    .banner {
+      width: 100%; /* Ocupa todo el ancho en dispositivos móviles */
+    }
+  
+    .header-container .header-navbar ul {
+      flex-direction: column; /* Mostrar elementos del menú en una columna */
+    }
+  
+    .header-container .header-navbar ul li {
+      margin: 10px 0;
+      text-align: center; /* Centrar elementos del menú */
+    }
+  }
+  
+/* Estilos específicos para dispositivos tabletas (ejemplo: ancho máximo de 768px) */
+
+  @media screen and (max-width: 768px) {
+    .header-container .header-navbar ul li a {
+      font-size: 14px; /* Ajusta el tamaño de fuente del menú para tabletas */
+    }
+  }
+
+/* Estilos para el footer en dispositivos móviles y tabletas Footer*/
+
+/* Alinea los elementos en el centro y cambia la dirección de la columna para dispositivos móviles */
+
+@media screen and (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+  
+    .items-container {
+      grid-template-columns: 1fr; /* Una sola columna en dispositivos móviles */
+      gap: 10px;
+      height: auto;
+    }
+  
+    .copyright-container .tarjetas-container {
+      font-size: 20px; /* Reduce el tamaño de fuente de las tarjetas de crédito */
+      gap: 10px;
+    }
+  
+    .registro-container {
+      padding: 10px;
+    }
+  
+    .mediasocial-container .media-icons {
+      font-size: 1.4em; /* Aumenta el tamaño de fuente de los iconos de redes sociales */
+      padding: 10px 0;
+    }
+  }
+
+/* Estilos del formulario para tabletas y dispositivos móviles Formulario*/
+
+@media screen and (max-width: 768px) {
+    .formulario {
+      padding-left: 10px; /* Reduzca el espacio a la izquierda del formulario */
+    }
+  
+    .formulario input[type='text'],
+    .formulario textarea {
+      width: 100%; /* Ocupa todo el ancho disponible */
+      margin-bottom: 15px; /* Reduzca el espaciado entre campos de entrada */
+      padding: 15px; /* Reduzca el relleno en campos de entrada */
+    }
+  
+    .formulario textarea {
+      min-height: 100px; /* Ajuste la altura mínima de la textarea */
+      max-height: 150px; /* Ajuste la altura máxima de la textarea */
+    }
+  
+    .formulario button {
+      padding: 10px 20px; /* Reduzca el tamaño del botón para una apariencia más equilibrada */
+    }
+  }

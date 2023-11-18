@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: #050508;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    vertical-align: middle;
+    font-size: 100px;
+}
+
+img {
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.weather-content {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    max-width: 501px;
+    text-align: center;
+    padding: 20px 20px 50px;
+    margin: 5% auto 10%;
+    background-color: #546785;
+    border-radius: 9px;
+}
+
+.weather-content h1{
+    font-size: 34px;
+    margin-bottom: 10px;
+    color: #FFF;
+}
+
+.weather-content p{
+    color: #cfcfd9;
+}
+
+.result{
+    margin-bottom: 8%;
+}
+
+.result p{
+    margin: 5px 0 5px;
+}
+
+.result h2{
+    font-size: 70px;
+    line-height: 70px;
+    margin: -10px 0 10px;
+    color: #fff;
+}
+
+.result h5{
+    font-size: 21px;
+    margin: 2px;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input[type="text"], form input[type="submit"], form select{
+    width: 100%;
+    margin: 0px 0 25px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+form input[type="submit"]{
+    width: 100%;
+    margin: 0 auto;
+    cursor: pointer;
+    background-color: #620586;
+    border: 1px solid #620586;
+    color: #fff;
+    font-weight: 600;
+    transition: width 1s;
+}
+
+form input[type="submit"]:hover{
+    width: 50%;
+}
+
+.alert-message {
+    margin: 24px 0 0;
+    color: red!important;
+}
+
+/* Footer */
+
+footer {
+  background-color: #181717;
+  color: white;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+}
+
+.items-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: 10px;
+  width: 100%;
+  height: 250px;
+}
+
+.copyright-container {
+  width: 100%;
+  margin: 30px 0;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid #323232;
+  color: #747474;
+}
+
+.copyright-container .tarjetas-container {
+  display: flex;
+  font-size: 25px;
+  gap: 20px;
+}
+
+.registro-container {
+  /* color: blue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: auto;
+  /* Tratar de arreglar el overflow al minimizar la pantalla */
+  overflow: hidden;
+  /* align-items: center; */
+}
+
+.registro-container .registro-parrafos {
+  /*   */
+  color: #747474;
+  padding: 20px 0;
+}
+
+.mediasocial-container .media-icons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+  color: #620586;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.inf-container ul {
+  padding: 20px 0;
+  color: #620586;
+  cursor: pointer;
+}
+
+.form-box form {
+  display: flex;
+}
+
+form input {
+  width: 75%;
+}
+
+.form-box form button {
+  width: 40px;
+  font-size: 1.2em;
+  padding: 3px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Estilos generales para dispositivos móviles */
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 16px; /* Ajusta el tamaño de fuente para una mejor legibilidad */
+  }
+
+  h1 {
+    font-size: 36px; /* Ajusta el tamaño de fuente del encabezado principal */
+  }
+
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contenedor-conciertos {
+    grid-template-columns: 1fr; /* Cambia a una sola columna para los conciertos */
+  }
+
+  .card {
+    width: 100%; /* Ocupa todo el ancho en dispositivos móviles */
+  }
+
+  .banner {
+    width: 100%; /* Ocupa todo el ancho en dispositivos móviles */
+  }
+
+  .header-container .header-navbar ul {
+    flex-direction: column; /* Mostrar elementos del menú en una columna */
+  }
+
+  .header-container .header-navbar ul li {
+    margin: 10px 0;
+    text-align: center; /* Centrar elementos del menú */
+  }
+}
+
+/* Estilos específicos para dispositivos tabletas (ejemplo: ancho máximo de 768px) */
+
+@media screen and (max-width: 768px) {
+  .header-container .header-navbar ul li a {
+    font-size: 14px; /* Ajusta el tamaño de fuente del menú para tabletas */
+  }
+}
+
+/* Estilos para el footer en dispositivos móviles y tabletas Footer*/
+
+/* Alinea los elementos en el centro y cambia la dirección de la columna para dispositivos móviles */
+
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .items-container {
+    grid-template-columns: 1fr; /* Una sola columna en dispositivos móviles */
+    gap: 10px;
+    height: auto;
+  }
+
+  .copyright-container .tarjetas-container {
+    font-size: 20px; /* Reduce el tamaño de fuente de las tarjetas de crédito */
+    gap: 10px;
+  }
+
+  .registro-container {
+    padding: 10px;
+  }
+
+  .mediasocial-container .media-icons {
+    font-size: 1.4em; /* Aumenta el tamaño de fuente de los iconos de redes sociales */
+    padding: 10px 0;
+  }
+}
+
+/* Estilos del formulario para tabletas y dispositivos móviles Formulario*/
+
+@media screen and (max-width: 768px) {
+  .formulario {
+    padding-left: 10px; /* Reduzca el espacio a la izquierda del formulario */
+  }
+
+  .formulario input[type='text'],
+  .formulario textarea {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    margin-bottom: 15px; /* Reduzca el espaciado entre campos de entrada */
+    padding: 15px; /* Reduzca el relleno en campos de entrada */
+  }
+
+  .formulario textarea {
+    min-height: 100px; /* Ajuste la altura mínima de la textarea */
+    max-height: 150px; /* Ajuste la altura máxima de la textarea */
+  }
+
+  .formulario button {
+    padding: 10px 20px; /* Reduzca el tamaño del botón para una apariencia más equilibrada */
+  }
+}

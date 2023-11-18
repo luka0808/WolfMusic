@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href=./img/styles.css>
+	<link rel="icon" href="./img/icono.ico">
+	<title>OPINIONS</title>
+
+</head>
+
+<body>
+
+	<header>
+
+        <div class="header-logo" id="inicio">
+            <a href="https://luka0808.github.io/WolfMusic/">
+                <img src="img/wolf music.jpeg" alt="logo_shop">
+            </a>
+        </div>
+    
+	</header>
+    
+    <div class="container">
+        <h2>Customer Opinions</h2>
+
+            <div class="opiniones">
+                <div class="opinion">
+                <span class="nombre">Juan Pérez:</span>
+                <p>Tickets for AC/DC purchased, thanks to WolfMusic! I'm thrilled to be seeing this iconic band 
+                    perform live. Rock 'n' roll at its best! Thanks to WolfMusic for making it all so easy. See you at 
+                    the concert! 🤘😎</p>
+            </div>
+
+    </div>
+
+            <!-- Las nuevas opiniones ingresadas por los usuarios se mostrarán aquí -->
+    
+        <h3>Leave your opinion</h3>
+
+           <form id="formularioOpinion">
+                <label for="nombre">Name:</label>
+                <input type="text" id="nombre" name="nombre" class="nombre-text" required>
+           
+                <label for="mensaje">Opinion:</label>
+                <textarea id="mensaje" name="mensaje" class="opinion-text" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+            
+    </div> 
+
+    <script src="script.js"></script>
+	
+	</main>
+	
+	<footer>
+		<div class="footer-container">
+            <div class="items-container">
+                <div class="inf-container">
+                    <h3>CORPORATE INFO</h3>
+                    <ul>
+                        <li>CAREERS</li>
+                        <li>LA.OFERTA</li>
+                        <li>PRIVACY POLICY</li>
+                        <li>TERMS & CONDITIONS</li>
+                        <li>COOKIES</li>
+                    </ul>
+                </div>
+                <div class="mediasocial-container">
+                    <h3>FOLLOW US</h3>
+                    <div class="media-icons">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+
+                </div>
+                <div class="registro-container">
+                    <h3>SIGN UP TO COMPANY</h3>
+                    <div class="registro-parrafos">
+                        <p>SUSCRIBE TO OUR NEWSLETTER TO GET LATEST NEWS</p>
+                        <P>ABOUT OUR PRODUCTS, EVENTS AND SALES</P>
+                    </div>
+                    <div class="box">
+                        <div class="form-box">
+                            <form action="#">
+                                <input type="text" name="emailaddress" placeholder="ENTER YOUR E-MAIL ADDRESS ">
+                                <button type="submit">
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                    <!-- <span class="material-symbols-outlined">
+                                    send
+                                    </span> -->
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-container">
+                <p>&copy;2023-2024 WolfMusic - ALL RIGHTS RESERVED</p>
+                <div class="tarjetas-container">
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                    <i class="fa-brands fa-cc-paypal"></i>
+                    <i class="fa-brands fa-cc-diners-club"></i>
+                </div>
+            </div>
+        </div>
+	</footer>
+</body>
+
+</html>

@@ -1,0 +1,384 @@
+@import url(https://db.onlinewebfonts.com/c/fa8cee1635fca4ab1f1335bec954feb7?family=Gorillaz1);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1{ font-size: 3.1em;}
+h2{ font-size: 2.5em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+li{ font-size: 1.25em;}
+
+.container {
+    max-width: 1900px;
+    margin: auto;
+    height: auto;
+}
+
+/* Seccion de Header */
+
+header {
+    max-width: 1900px;
+    height: 100%;
+    margin: auto;
+    background: url(G01.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo img{
+    width: 100%;
+    height: 60px;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+
+header .container-header {
+    background: rgba(236, 87, 87, 0.598);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .container-header h1 {
+    padding: 25px 30px;
+}
+
+header .container-header ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+header .container-header ul li {
+    padding: 5px 10px;
+}
+
+header .container-header ul li a {
+    color: black;
+    transition: all .4s ease;
+    /* font-weight: bold; */
+}
+
+header .container-header ul li a:hover {
+    color: white;
+    /* transform: scale(2); */
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white; /* Cambia el color del texto a blanco */
+    text-align: center;
+    padding: 200px 0;
+    text-shadow: 2px 2px 0 black; /* Agrega un sombreado negra al texto */
+}
+
+#hero h1 {
+    font-family: "Gorillaz1";
+    transition: all 0.3s ease;
+}
+
+#hero h1:hover {
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+/* Seccion NEWs */
+
+#news .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(to bottom right, #ac0211 24%, #13111e 73%); */
+    background: linear-gradient(220.55deg, #565656 0%, #181818 100%);
+    /* background:linear-gradient(45deg, #ce0313, #13111e); */
+    height: 95vh;
+    padding: 200px 0;
+}
+
+#news .container h1 {
+    font-family: "Gorillaz1";
+    color: black;
+    font-weight: 900;
+}
+
+#news .container span{
+    font-family: "Gorillaz1";
+    color: #ce0313;
+    /* opacity: 45%; */
+}
+
+#news .container p {
+    color: white;
+    padding: 40px 5%;
+    text-align: center;
+}
+
+/* Seccion Music/Discograpy */
+
+#music .container{
+    /* background:linear-gradient(45deg, blueviolet, lightgreen); */
+    background:linear-gradient(45deg, #ce0313, #13111e);
+    padding: 100px 9%;
+    height: 100%;
+    /* padding-bottom: 100px; */
+}
+
+.container .heading{
+    font-family: "Gorillaz1";
+    text-align: center;
+    padding-bottom: 50px ;
+    color:#fff;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    font-size: 50px;
+}
+
+.container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap:15px;
+}
+
+.container .box-container .box{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    background: #181818;
+    text-align: center;
+    padding:30px 20px;
+    transition: all .3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container .box-container .box img{
+    height: 80px;
+}
+
+.container .box-container .box h3{
+    color:#777;
+    font-size: 22px;
+    padding:10px 0;
+}
+
+.container .box-container .box p{
+    color:#777;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.container .box-container .box .btn{
+    margin-top: 10px;
+    font-weight: bold;
+    display: inline-block;
+    background: #ce0313;
+    color:#fff;
+    font-size: 17px;
+    border-radius: 50px;
+    padding: 8px 25px;
+    transition: all 0.3s ease;
+}
+
+.container .box-container .box .btn:hover{
+    letter-spacing: 1px;
+    background: #13111e;
+}
+
+.container .box-container .box:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.03);
+}
+
+.reproductor-spotify {
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
+
+/* Seccion Events */
+
+#events .container {
+    padding: 150px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(G02.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* color: #ce0313; */
+}
+
+#events .container h1 {
+    color: white;
+    text-shadow: 4px 4px black;
+}
+
+#events .container .fechas ul li {
+    padding-top: 3px;
+}
+
+#events .container .fechas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 425;
+    font-size: 1.5em;
+    padding: 40px 0;
+    /* margin-left: 60px; */
+    /* padding: 15px; */
+}
+
+#events .container .fechas .ciudades {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ce0313;
+}
+
+#events .container .fechas .fecha{
+    color: #ce0313;
+}
+
+#events .container .fechas .lugar{
+    color: #777;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Seccion About */
+
+#about .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 0;
+    background: url(G03.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+#about .container h1 {
+    color: rgb(253, 6, 6);
+    text-shadow: 4px 4px white;
+    padding: 30px;
+}
+
+#about .container h1 span {
+    color: #181818;
+}
+
+#about .container p {
+    padding: 50px 20px;
+    color: black; /* Cambia el color del texto a blanco */
+    text-align: center;
+}
+
+/* Seccion Footer */
+
+footer .container {
+    background: #ce0313;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 5%;
+}
+
+footer .container h2 {
+    color: white;
+    font-weight: 900;
+    padding: 20px;
+}
+
+footer .icons {
+    color: white;
+    display: flex;
+    padding: 1.2rem 1rem;
+    font-size: 2rem;
+    gap: 2rem;
+    cursor: pointer;
+}
+
+footer .icons i {
+    transition: all .3s ease;
+}
+
+footer .icons i:hover {
+    color: #181818;
+    transform: scale(1.5);
+}
+
+.facebook-icon i {
+    color: #fff; /* Color azul de Facebook */
+}
+
+.instagram-icon i {
+    color: #fff; /* Color rosa de Instagram */
+}
+
+.twitter-icon i {
+    color: #fff; /* Color azul de Twitter */
+}
+
+@media (min-width:720px){  /*Esto indica que cuando el ancho de la pantalla supere los 720px se van a aplicar los siguientes estilos*/
+    /* Header */
+    header {
+        height: 100%;
+        margin: auto;
+    }
+    
+    header .container-header {
+        /* width: 100%;  */
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    header .container-header ul{
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #hero h1{
+        color: #ce0313;
+        text-align: center;
+        font-size: 10em;
+        margin: 40px 0;
+    }
+
+    #hero h3 {
+        font-size: 3em;
+    }
+
+}

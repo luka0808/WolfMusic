@@ -7,8 +7,8 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open Home.html",
-            "file": "c:\\Users\\maria.ledezma.romero\\HTML\\Python\\Home.html"
+            "name": "Open ejemplo.html",
+            "file": "c:\\Users\\maria.ledezma.romero\\OneDrive - Accenture\\Desktop\\HTML\\ejemplo.html"
         }
     ]
 }

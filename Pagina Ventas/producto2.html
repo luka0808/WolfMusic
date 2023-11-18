@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/logo10.png" />
+    <title>Wolf Store</title>
+</head>
+
+<body>
+    <header>
+        <section class="header-container">
+            <div class="header-envios">
+                <p>We offer free shipping nationwide on purchases of $35,000 or more</p>
+            </div>
+            <div class="header-iconos">
+                <div class="header-registro">
+                    <button type="button" id="login-abrir-modal">Login in</button>
+                </div>
+
+                <dialog id="modal-login">
+                    <div class="modal">
+                        <h1>PAGE IN PROCESS...</h1>
+                        <p> WolfStore
+                            La.Oferta
+                        </p>
+                            <img src="img/dificultades_tecnicas.jpg" alt="dificultades_tecnicas" style="width: 500px;height: 400px;">
+
+                        <button type="button" id="login-cerrar-modal"><b>CLOSE</b></button>
+                    </div>
+
+                </dialog>
+
+
+                <div class="redes-sociales">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                </div>
+            </div>
+            <div class="header-logo" id="inicio">
+                <a href="index.html">
+                    <img src="img/logo10.png" alt="logo_shop">
+                </a>
+            </div>
+            <!-- Nuevo Navbar -->
+            <nav>
+                <ul>
+                    <ul class="navbar-static">
+                        <li><a href="index.html">START</a></li>
+                        <li> < </li>
+                        <li><a href="#">PRODUCT</a></li>
+                        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                    </ul>
+            </nav>
+            
+        </section>
+    </header>
+    <main>
+        <section class="producto-container">
+           
+            <div class="producto-inf">
+                <div class="producto-slider">
+                    <div class="wrapper">
+                        <img src="merch_website/LP_merch08.png" alt="img_homero">
+                        <img src="merch_website/LP_merch08.png" alt="img_homero">
+                        <img src="merch_website/LP_merch08.png" alt="img_homero">
+                        <img src="merch_website/LP_merch08.png" alt="img_homero">
+                    </div>
+                </div>
+                <div class="producto-descripcion">
+                    <h2>LINKIN PARK - Long-sleeve</h2>
+                    <h5>$ 14.999</h5>
+                    <p>A 100% cotton Long-sleeve</p>
+                    <table>
+                        <!-- <tr>
+                            <th>titulo</th>
+                            <th>titulo</th>
+                        </tr> -->
+                        <tr>
+                            <td>COLOR</td>
+                            <td>BLACK</td>
+                        </tr>
+                        <tr>
+                            <td>SIZE</td>
+                            <td>S-M-L-XL-XXL</td>
+                        </tr>
+                        <tr>
+                            <td>AMOUNT</td>
+                            <td>10</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="producto-detalles">
+                <div class="details">
+                <h3>DETAILS</h3>
+                <p>A 100% cotton Long-sleeve</p>
+                
+                </div>
+                <div class="especificaciones">
+                    <h3>SPECIFICATIONS</h3>
+                    <table>
+                        <!-- <tr>
+                            <th>titulo</th>
+                            <th>titulo</th>
+                        </tr> -->
+                        <tr>
+                            <td>COLOR</td>
+                            <td>WHITE-BLACK-RED</td>
+                        </tr>
+                        <tr>
+                            <td>SIZE</td>
+                            <td>150x100x100</td>
+                        </tr>
+                        <tr>
+                            <td>WEIGHT</td>
+                            <td>0.6 Kg</td>
+                        </tr>
+                        <tr>
+                            <td>OTHER</td>
+                            <td>OTHER</td>
+                        </tr>
+                    </table>
+                </div>
+                
+            </div>
+
+        </section>
+    </main>
+    <!-- <img src="img/homero_gordo01.jpg" alt="">
+    <h1>AQUI VAN LOS PRODUCTOS</h1> -->
+
+    <footer>
+        <div class="footer-container">
+            <div class="items-container">
+                <div class="inf-container">
+                    <h3>CORPORATE INFO</h3>
+                    <ul>
+                        <li>CAREERS</li>
+                        <li>LA.OFERTA</li>
+                        <li>PRIVACY POLICY</li>
+                        <li>TERMS & CONDITIONS</li>
+                        <li>COOKIES</li>
+                    </ul>
+                </div>
+                <div class="mediasocial-container">
+                    <h3>FOLLOW US</h3>
+                    <div class="media-icons">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+
+                </div>
+                <div class="registro-container">
+                    <h3>SIGN UP TO COMPANY</h3>
+                    <div class="registro-parrafos">
+                        <p>SUSCRIBE TO OUR NEWSLETTER TO GET LATEST NEWS</p>
+                        <P>ABOUT OUR PRODUCTS, EVENTS AND SALES</P>
+                    </div>
+                    <div class="box">
+                        <div class="form-box">
+                            <form action="#">
+                                <input type="text" name="emailaddress" placeholder="ENTER YOUR E-MAIL ADDRESS ">
+                                <button type="submit">
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                    <!-- <span class="material-symbols-outlined">
+                                    send
+                                    </span> -->
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-container">
+                <p>&copy;2023/2024 WOLF MUSIC - ALL RIGHTS RESERVED</p>
+                <div class="tarjetas-container">
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                    <i class="fa-brands fa-cc-paypal"></i>
+                    <i class="fa-brands fa-cc-diners-club"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="navbar.js"></script>
+    <script src="main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
