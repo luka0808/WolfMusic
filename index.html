@@ -6,10 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer">
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="Pagina WolfMusic/img/estilos.css">
 	<link rel="icon" href="Pagina WolfMusic/img/icono.ico">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<title>Wolf Music</title>
 
 </head>
@@ -133,12 +134,13 @@
                         </div>
                         <!-- <i class="fa-solid fa-phone"></i> -->
                     </div>
-                    <form action="" class="formulario">
+                    <form action="" class="formulario" id="form">
                         <input type="text" name="" placeholder="Name" id="nombre">
                         <input type="text" name="" placeholder="Email" id="email">
                         <input type="text" name="" placeholder="Please write a clear subject for your email" id="asunto">
                         <textarea name="msj" id="msj" placeholder="Message"></textarea>
-                        <button type="button">Send</button>
+                        <button type="submit">Send</button>
+                        <p class="warning" id="warning"></p>
                     </form>
                 </div>
             </div>
@@ -200,5 +202,12 @@
             </div>
         </div>
 	</footer>
+
+    <script src="./Pagina WolfMusic/formulario.js"></script>
+    <script src="./Pagina WolfMusic/navbar.js"></script>
+    <script src="./Pagina WolfMusic/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
