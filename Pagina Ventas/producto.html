@@ -53,7 +53,7 @@
             <nav>
                 <ul>
                     <ul class="navbar-static">
-                        <li><a href="index.html">START</a></li>
+                        <li><a href="index.html">HOME</a></li>
                         <li> < </li>
                         <li><a href="#">PRODUCT</a></li>
                         <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
@@ -64,7 +64,7 @@
     </header>
     <main>
         <section class="producto-container">
-            <div class="producto-inf">
+            <div id="app" class="producto-inf">
                 <div class="producto-slider">
                     <div class="wrapper">
                         <img src="merch_website/MCR_merch01.png" alt="img_homero">
@@ -73,8 +73,10 @@
                         <img src="merch_website/MCR_merch01.png" alt="img_homero">
                     </div>
                 </div>
+                <!-- <div class="producto-descripcion" v-for="producto in productos"> -->
                 <div class="producto-descripcion">
                     <h2>MCR - Unisex</h2>
+                    <!-- <h2>{{productos[1].nombre}}</h2> -->
                     <h5>$ 24999</h5>
                     <p>A 100% cotton hooded sweatshirt</p>
                     <table>
@@ -190,6 +192,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script><!--Link de VUE-->
+    <script src="productos.js"></script>
     <script src="navbar.js"></script>
     <script src="main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

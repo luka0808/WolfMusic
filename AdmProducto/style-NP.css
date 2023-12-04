@@ -1,0 +1,28 @@
+/*PAGINA - Nuevo Producto */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+}
+
+.mb-3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1 {
+    margin: 20px 0px;
+}
+
+.logo-container img{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    margin: 20px;
+    
+}

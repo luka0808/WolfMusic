@@ -13,21 +13,25 @@ form.addEventListener("submit", e=>{
     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
     parrafo.innerHTML = "";
 
-    if(nombre.value.length < 8){
-        warnings += `El Nombre no es valido <br>`
+    if(nombre.value.length < 4){
+        alert("ERROR!!, debe ingresar un Nombre")
+        // warnings += `El Nombre no es valido <br>`
         entrar = true
     }
     if(!regexEmail.test(email.value)){
-        warnings += `El Email no es valido <br>`
+        alert("ERROR!!, debe ingresar un Email")
+        // warnings += `El Email no es valido <br>`
         entrar = true
     }
 
     if(asunto.value.length < 2){
-        warnings += `Debe ingresar el Asunto <br>`
+        alert("ERROR!!, debe ingresar el Asunto")
+        // warnings += `Debe ingresar el Asunto <br>`
         entrar = true
     }
     if(mensaje.value.length < 2){
-        warnings += `Debe ingresar un Mensaje <br>`
+        alert("ERROR!!, debe ingresar el Mensaje")
+        // warnings += `Debe ingresar un Mensaje <br>`
         entrar = true
     }
 

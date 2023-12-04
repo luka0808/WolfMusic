@@ -22,6 +22,7 @@
             <div class="header-iconos">
                 <div class="header-registro">
                     <button type="button" id="login-abrir-modal">Login in</button>
+                    <button type="button"><a href="../AdmProducto/productos.html">Administrador</a></button>
                 </div>
 
                 <dialog id="modal-login">
@@ -64,7 +65,7 @@
                 </ul>
                 
                 <ul class="navbar-static">
-                    <li class="hideOnMobile"><a href="#inicio">START</a></li>
+                    <li class="hideOnMobile"><a href="#inicio">HOME</a></li>
                     <li class="hideOnMobile"><a href="nosotros.html">ABOUT</a></li>
                     <li class="hideOnMobile"><a href="#mas-vendidos">THE MOST SOLD</a></li>
                     <li class="hideOnMobile"><a href="#todos-productos">PRODUCT</a></li>
@@ -112,20 +113,25 @@
                     <a href="producto.html"><img src="merch_website/MCR_merch01.png" alt="img_MCR_merch"></a>
                     <h2>MCR - Sweatshirt</h2>
                     <p>$24999</p>
+                    <button>BUY</button>
                 </div>
                 <div class="cards">
                     <a href="producto2.html"><img src="merch_website/LP_merch08.png" alt="img_LP_merch"></a>
                     <h2>LINKIN PARK - Long-sleeve</h2>
                     <p>$14999</p>
+                    <button>BUY</button>
                 </div>
                 <div class="cards">
-                    <a href="producto3.html"><img src="merch_website/PRME_merch01.png" alt="img_PRME_merch"></a>
+                    <a href="producto3.html"><img src="merch_website/PRME_merch06.png" alt="img_PRME_merch"></a>
                     <h2>PARAMORE - T-shirt</h2>
                     <p>$14999</p>
+                    <button>BUY</button>
                 </div>
 
 
             </div>
+
+
 
         </section>
 
@@ -146,73 +152,92 @@
                 <p>PRISMA</p>
             </div>
         </div>
-
+        
         <section class="todos-productos" id="todos-productos">
             <div class="titulo-secciones">
                 <h1>ALL THE PRODUCTS</h1>
                 <h4>Shipping is free if you purchase more than two items</h4>
             </div>
-            <div class="container">
+            <div id="app" class="container">
                 <div class="cards">
                     <!-- se podria meter en un div a la imagen y al otro contenido para trabajarlos mejor -->
                     <img src="merch_website/MCR_merch07.png" alt="img_MCR_merch">
                     <h2>MRC - T-shirt</h2>
                     <p>$14999</p>
+                    <button>BUY</button>
                 </div>
                 <div class="cards">
                     <img src="merch_website/MCR_merch03.png" alt="img_MCR_merch">
                     <h2>MCR - Sweatshirt</h2>
                     <p>$24999</p>
+                    <button>BUY</button>
                 </div>
                 <div class="cards">
                     <img src="merch_website/MCR_merch06.png" alt="img_MCR_merch">
                     <h2>MCR - Jacket</h2>
                     <p>$67000</p>
+                    <button>BUY</button>
                 </div>
                 <div class="cards">
                     <img src="merch_website/GLZ_merch01.png" alt="img_GORILLAZ_merch">
                     <h2>GORILLAZ - T-shirt</h2>
                     <p>$14999</p>
+                    <button>BUY</button>
                 </div>
                 <div class="cards">
                     <img src="merch_website/GLZ_merch03.png" alt="img_GORILLAZ_merch">
                     <h2>GORILLAZ - T-shirt</h2>
                     <p>$14999</p>
+                    <button>BUY</button>
                 </div>
                 <div class="cards">
                     <img src="merch_website/GLZ_merch02.png" alt="img_GORILLAZ_merch">
                     <h2>GORILLAZ - Sweatshirt</h2>
                     <p>$24999</p>
+                    <button>BUY</button>
                 </div>
                 <div class="cards">
                     <img src="merch_website/PRME_merch06.png" alt="img_PARAMORE_merch">
                     <h2>PARAMORE - T-shirt</h2>
                     <p>$14999</p>
+                    <button>BUY</button>
                 </div>
                 <div class="cards">
                     <img src="merch_website/PRME_merch03.png" alt="img_PARAMORE_merch">
                     <h2>PARAMORE - Sweatshirt</h2>
                     <p>$14999</p>
+                    <button>BUY</button>
                 </div>
                 <div class="cards">
                     <img src="merch_website/PRME_merch08.png" alt="img_PARAMORE_merch">
                     <h2>PARAMORE - T-shirt</h2>
                     <p>$14999</p>
+                    <button>BUY</button>
                 </div>
                 <div class="cards">
                     <img src="merch_website/LP_merch01.png" alt="img_LP_merch">
                     <h2>LP - T-shirt</h2>
                     <p>$14999</p>
+                    <button>BUY</button>
                 </div>
                 <div class="cards">
                     <img src="merch_website/LP_merch05.png" alt="img_LP_merch">
                     <h2>LP - T-shirt</h2>
                     <p>$14999</p>
+                    <button>BUY</button>
                 </div>
                 <div class="cards">
                     <img src="merch_website/LP_merch02.png" alt="img_LP_merch">
                     <h2>LP - Long-sleeve</h2>
                     <p>$14999</p>
+                    <button>BUY</button>
+                </div>
+
+                <div class="cards" v-for="producto in productos">
+                    <img :src="producto.imagen" :alt="producto.nombre">
+                    <h2>{{producto.nombre}}</h2>
+                    <p>${{producto.precio}}</p>
+                    <button>BUY</button>
                 </div>
 
             </div>
@@ -360,12 +385,15 @@
             </div>
         </div>
     </footer>
-
+    <!-- crear archivo producto.js para consumir el get de la API -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script><!--Link de VUE-->
+    <script src="productos.js"></script>
     <script src="formulario.js"></script>
     <script src="navbar.js"></script>
     <script src="main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
 </body>
 
 </html>
