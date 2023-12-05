@@ -135,7 +135,7 @@ function spawnNote() {      // genera una nota y la agrega al arreglo
     note.y = 0;
     note.width = 24;
     note.height = 24;
-    note.speed = Math.random () *2 + 1;
+    note.speed = Math.random () *1.25 + 1;
     notes.push (note);
 };
 
@@ -145,7 +145,7 @@ function upDifficulty (){   // sube la dificultad, aumentando el limite de notas
         if (gameTime >= currentDifficulty * 5000)
         currentDifficulty++;
     }
-    const maxNotes = currentDifficulty * 2;
+    const maxNotes = currentDifficulty * 1.5;
     while(notes.length < maxNotes){
     spawnNote();
     }
