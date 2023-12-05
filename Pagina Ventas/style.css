@@ -319,7 +319,7 @@ html {
 
 .container .cards img {
     width: 100%;
-    height: 350px;
+    height: auto;
 }
 
 .container .cards h2 {

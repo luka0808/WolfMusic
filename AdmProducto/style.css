@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+}
+
+body {
+    background-color: #050508;
+    color: aliceblue;
+    /* color: #050508; */
+}
+
+/* Logo */
+.logo-container img{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+/* Tabla */
+.btn-primary{
+    margin: 0px 10px;
+}
+
+.table-responsive{
+    background-color: #202020;
+}
+
+.table-bordered{
+    color: #fff;
+}
+
+.cards {
+    margin: 50px;
+    background-color: grey;
+    border: 5px solid #fff;
+
+}  
