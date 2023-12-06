@@ -14,23 +14,23 @@ form.addEventListener("submit", e=>{
     parrafo.innerHTML = "";
 
     if(nombre.value.length < 4){
-        alert("ERROR!!, debe ingresar un Nombre")
+        alert("ERROR!!, Please enter a Name")
         // warnings += `El Nombre no es valido <br>`
         entrar = true
     }
     if(!regexEmail.test(email.value)){
-        alert("ERROR!!, debe ingresar un Email")
+        alert("ERROR!!, Please enter an Email")
         // warnings += `El Email no es valido <br>`
         entrar = true
     }
 
     if(asunto.value.length < 2){
-        alert("ERROR!!, debe ingresar el Asunto")
+        alert("ERROR!!, Please enter the Subject")
         // warnings += `Debe ingresar el Asunto <br>`
         entrar = true
     }
     if(mensaje.value.length < 2){
-        alert("ERROR!!, debe ingresar el Mensaje")
+        alert("ERROR!!, Please enter the Message")
         // warnings += `Debe ingresar un Mensaje <br>`
         entrar = true
     }
