@@ -22,7 +22,8 @@ img {
 }
 
 body {
-	background: black;
+  font-family: 'Montserrat', sans-serif;
+	background: #050508;
 	color: #fff;
   text-shadow: black;
 	font-family: 'Roboto', sans-serif;
