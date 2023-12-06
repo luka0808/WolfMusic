@@ -55,12 +55,12 @@ createApp({
             }
             fetch(this.url, options)
                 .then(function () {
-                    alert("Registro grabado")
+                    alert("Record saved")
                     window.location.href = "productos.html";
                 })
                 .catch(err => {
                     console.error(err);
-                    alert("Error al Grabar")
+                    alert("Save error")
                 })
         }
     },

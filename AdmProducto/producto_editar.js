@@ -48,12 +48,12 @@ createApp({
             }
             fetch(this.url, options)
                 .then(function () {
-                    alert("Registro modificado")
+                    alert("Record modified")
                     window.location.href = "productos.html";
                 })
                 .catch(err => {
                     console.error(err);
-                    alert("Error al Modificar")
+                    alert("Error while modifying")
                 })
         }
     },

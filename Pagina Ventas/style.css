@@ -720,6 +720,7 @@ form input {
 
 .nosotros .perfil-contenedor .card-perfil .inf-perfil h1{
     font-size: 3.5em;
+    margin-top: 10px;
 }
 .nosotros .perfil-contenedor .card-perfil img{
     width: 250px;
