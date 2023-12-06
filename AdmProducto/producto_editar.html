@@ -22,18 +22,18 @@
             </div>
             <div class="container" id="app">
                 <form style="background-color: #050508; color: #fff; margin:10px auto ; width: 500px; padding: 20px;">
-                    <h1>EDITAR PRODUCTO</h1>
+                    <h1>EDIT PRODUCT</h1>
                     <!-- <p>Precio:{{precio}}</p> -->
                     <div class="mb-3">
                         <label for="id">ID</label>
                         <input type="number" name="id" id="id" disabled v-model="id">
                     </div>
                     <div class="mb-3">
-                        <label for="nombre">NOMBRE</label>
+                        <label for="nombre">NAME</label>
                         <input type="text" name="nombre" id="nombre" v-model="nombre">
                     </div>
                     <div class="mb-3">
-                        <label for="precio">PRECIO</label>
+                        <label for="precio">PRICE</label>
                         <input type="number" name="precio" id="precio" v-model="precio">
                     </div>
                     <div class="mb-3">
@@ -41,11 +41,11 @@
                         <input type="number" name="stock" id="stock" v-model="stock">
                     </div>
                     <div class="mb-3">
-                        <label for="imagen">IMAGEN</label>
+                        <label for="imagen">IMAGE</label>
                         <input type="text" name="imagen" id="imagen" v-model="imagen">
                         <img width="100" :src="imagen" alt="">
                     </div>
-                    <button type="button" class="btn btn-success" v-on:click="modificar()">GUARDAR</button>
+                    <button type="button" class="btn btn-success" v-on:click="modificar()">SAVE</button>
                 </form>
             </div>
     </main>

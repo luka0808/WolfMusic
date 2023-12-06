@@ -20,17 +20,17 @@
             <img src="../Pagina WolfMusic/img/wolf music.jpeg" alt="logo-WolfMusic">
         </div>
         <div id="app" class="container">
-            <h1>PRODUCTOS</h1>
+            <h1>PRODUCTS</h1>
             <br>
-            <a class="btn btn-primary" href="../AdmProducto/producto_nuevo.html">NUEVO</a>
+            <a class="btn btn-primary" href="../AdmProducto/producto_nuevo.html">NEW</a>
             <br><br>
             <div v-if="error">
-                <p>Lo sentimos , ........</p>
+                <p>We're sorry ........</p>
             </div>
             <div v-else>
                 <section v-if="cargando">
                     <div class="spinner-border"></div>
-                    <p>Cargando .....</p>
+                    <p>Charging .....</p>
                 </section>
                 <section v-else>
                     <div class="table-responsive">
@@ -38,11 +38,11 @@
                             <thead>
                                 <tr>
                                     <th scope="col">ID</th>
-                                    <th scope="col">NOMBRE</th>
-                                    <th scope="col">PRECIO</th>
+                                    <th scope="col">NAME</th>
+                                    <th scope="col">PRICE</th>
                                     <th scope="col">STOCK</th>
-                                    <th scope="col">IMAGEN</th>
-                                    <th scope="col">ACCIONES</th>
+                                    <th scope="col">IMAGE</th>
+                                    <th scope="col">ACTIONS</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -56,9 +56,9 @@
                                     </td>
                                     <td>
                                         <a class="btn btn-primary"
-                                            :href="'./producto_update.html?id='+ producto.id">EDITAR</a>
+                                            :href="'./producto_update.html?id='+ producto.id">EDIT</a>
                                         <button type="button" class="btn btn-danger"
-                                            v-on:click="eliminar(producto.id)">ELIMINAR</button>
+                                            v-on:click="eliminar(producto.id)">DELETE</button>
                                     </td>
                                 </tr>
                             </tbody>
@@ -69,8 +69,8 @@
             <div class="cards" v-for="producto in productos">
                 <p>ID:{{producto.id}}</p>
                 <img width="300" height="300" :src="producto.imagen" :alt="producto.nombre">
-                <h2>NOMBRE: {{producto.nombre}}</h2>
-                <h3>PRECIO: ${{producto.precio}}</h3>
+                <h2>NAME: {{producto.nombre}}</h2>
+                <h3>PRICE: ${{producto.precio}}</h3>
             </div>
         </div>
 

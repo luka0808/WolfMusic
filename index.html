@@ -10,7 +10,8 @@
     crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="Pagina WolfMusic/img/estilos.css">
 	<link rel="icon" href="Pagina WolfMusic/img/icono.ico">
-	<title>Wolf Music</title>
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Wolf Music</title>
 
 </head>
 
@@ -133,12 +134,13 @@
                         </div>
                         <!-- <i class="fa-solid fa-phone"></i> -->
                     </div>
-                    <form action="" class="formulario">
+                    <form action="" class="formulario" id="form">
                         <input type="text" name="" placeholder="Name" id="nombre">
                         <input type="text" name="" placeholder="Email" id="email">
                         <input type="text" name="" placeholder="Please write a clear subject for your email" id="asunto">
                         <textarea name="msj" id="msj" placeholder="Message"></textarea>
-                        <button type="button">Send</button>
+                        <button type="submit">Send</button>
+                        <p class="warning" id="warning"></p>
                     </form>
                 </div>
             </div>
@@ -200,5 +202,13 @@
             </div>
         </div>
 	</footer>
+    <!-- crear archivo producto.js para consumir el get de la API -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script><!--Link de VUE-->
+    <script src="Pagina WolfMusic/productos.js"></script>
+    <script src="Pagina WolfMusic/formulario.js"></script>
+    <script src="Pagina WolfMusic/navbar.js"></script>
+    <script src="Pagina WolfMusic/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
