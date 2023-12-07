@@ -135,7 +135,7 @@ function spawnNote() {      // genera una nota y la agrega al arreglo
     note.y = 0;
     note.width = 24;
     note.height = 24;
-    note.speed = Math.random () *2 + 1;
+    note.speed = Math.random () *1.35 + 1;
     notes.push (note);
 };
 
